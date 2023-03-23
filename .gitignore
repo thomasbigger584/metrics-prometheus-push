@@ -155,6 +155,7 @@ cython_debug/
 
 #Intellij
 .idea/
+*.iml
 
 ### Python Patch ###
 # Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
