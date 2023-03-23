@@ -12,3 +12,10 @@ scrape_configs:
   - targets: ['prom-pushgateway:9091']
     labels:
       service: 'prom-pushgateway'
+- job_name: dev-app
+  metrics_path: /metrics
+  scheme: http
+  static_configs:
+  - targets: ['app1:8080']
+    labels:
+      service: 'app-service'
