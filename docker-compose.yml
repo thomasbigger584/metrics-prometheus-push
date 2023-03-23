@@ -39,4 +39,8 @@ services:
       - prometheus
     ports:
       - 8080:8080
+    volumes:
+      - ~/.m2:/root/.m2
+    links:
+      - prom-pushgateway
     restart: on-failure
